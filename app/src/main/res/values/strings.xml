@@ -1,0 +1,122 @@
+<resources>
+    <!--    General string values for App-->
+    <string name="app_name">Who wants to be a Millionaire?</string>
+
+    <!--    Game rules-->
+    <string name="game_rule_1">1. The game contains 5 questions based on concepts related to Android app development.</string>
+    <string name="game_rule_2">2. Every question has 10 points each.</string>
+    <string name="game_rule_3">3. You can answer each question only once.</string>
+    <string name="game_rule_4">4. Answers may be fill-in or multiple choice. Some questions may have multiple choices as answers.</string>
+    <string name="game_rule_5">5. Score will be displayed at the end of the game.</string>
+    <string name="game_rule_message">Here you go! Good Luck!</string>
+    <string name="game_rule_title">Card Game Rules</string>
+    <string name="start_button">START</string>
+
+    <!--    Questions, options and answers -->
+    <string name="question_1">What is an activity in Android?</string>
+    <string name="option_1_a">Activity performs the actions on the screen</string>
+    <string name="option_1_b">Manages the Application content</string>
+    <string name="option_1_c">Screen UI</string>
+    <string name="option_1_d">None of the above</string>
+    <string name="answer_1">Activity performs the actions on the screen</string>
+
+    <string name="question_2">What are the layouts available in android?</string>
+    <string name="option_2_a">Linear Layout</string>
+    <string name="option_2_b">Frame Layout</string>
+    <string name="option_2_c">Table Layout</string>
+    <string name="option_2_d">Path Layout</string>
+    <string name="answer_2">Linear Layout</string>
+
+    <string name="question_3">What is fragment life cycle in android?</string>
+    <string name="option_3_a">onReceive() -> onAttach() -> onCreateView() -> onCreate()</string>
+    <string name="option_3_b">onCreate() -> onCreateView() -> onAttach() </string>
+    <string name="option_3_c">onAttach()-> onCreate() −> onCreateView() −> onActivityCreated() −> onStart() −> onResume()</string>
+    <string name="option_3_d">onStart() -> onCreateView() -> onCreate() -> onActivityCreated()</string>
+    <string name="answer_3">onAttach()-> onCreate() −> onCreateView() −> onActivityCreated() −> onStart() −> onResume()</string>
+
+    <string name="question_4">In which directory are the XML Layout files stored in an Android application?</string>
+    <string name="option_4_a">assets</string>
+    <string name="option_4_b">src</string>
+    <string name="option_4_c">res/layout</string>
+    <string name="option_4_d">res/values</string>
+    <string name="answer_4">res/layout</string>
+
+    <string name="question_5">Which programming language(s) are used for Android application development</string>
+    <string name="option_5_a">Java</string>
+    <string name="option_5_b">NodeJS</string>
+    <string name="option_5_c">C++</string>
+    <string name="option_5_d">Kotlin</string>
+    <string name="answer_5">Java</string>
+
+    <string name="question_6">Which programming language(s) are used for Android application development</string>
+    <string name="option_6_a">Java</string>
+    <string name="option_6_b">NodeJS</string>
+    <string name="option_6_c">C++</string>
+    <string name="option_6_d">Kotlin</string>
+    <string name="answer_6">Java</string>
+
+    <string name="question_7">Which programming language(s) are used for Android application development</string>
+    <string name="option_7_a">Java</string>
+    <string name="option_7_b">NodeJS</string>
+    <string name="option_7_c">C++</string>
+    <string name="option_7_d">Kotlin</string>
+    <string name="answer_7">Java</string>
+
+    <string name="question_8">Which programming language(s) are used for Android application development</string>
+    <string name="option_8_a">Java</string>
+    <string name="option_8_b">NodeJS</string>
+    <string name="option_8_c">C++</string>
+    <string name="option_8_d">Kotlin</string>
+    <string name="answer_8">Java</string>
+
+    <string name="question_9">Which programming language(s) are used for Android application development</string>
+    <string name="option_9_a">Java</string>
+    <string name="option_9_b">NodeJS</string>
+    <string name="option_9_c">C++</string>
+    <string name="option_9_d">Kotlin</string>
+    <string name="answer_9">Java</string>
+
+    <string name="question_10">Which programming language(s) are used for Android application development</string>
+    <string name="option_10_a">Java</string>
+    <string name="option_10_b">NodeJS</string>
+    <string name="option_10_c">C++</string>
+    <string name="option_10_d">Kotlin</string>
+    <string name="answer_10">Java</string>
+
+    <string name="question_11">Which programming language(s) are used for Android application development</string>
+    <string name="option_11_a">Java</string>
+    <string name="option_11_b">NodeJS</string>
+    <string name="option_11_c">C++</string>
+    <string name="option_11_d">Kotlin</string>
+    <string name="answer_11">Java</string>
+
+    <string name="question_12">Which programming language(s) are used for Android application development</string>
+    <string name="option_12_a">Java</string>
+    <string name="option_12_b">NodeJS</string>
+    <string name="option_12_c">C++</string>
+    <string name="option_12_d">Kotlin</string>
+    <string name="answer_12">Java</string>
+
+    <string name="question_13">Which programming language(s) are used for Android application development</string>
+    <string name="option_13_a">Java</string>
+    <string name="option_13_b">NodeJS</string>
+    <string name="option_13_c">C++</string>
+    <string name="option_13_d">Kotlin</string>
+    <string name="answer_13">Java</string>
+
+    <string name="question_14">Which programming language(s) are used for Android application development</string>
+    <string name="option_14_a">Java</string>
+    <string name="option_14_b">NodeJS</string>
+    <string name="option_14_c">C++</string>
+    <string name="option_14_d">Kotlin</string>
+    <string name="answer_14">Java</string>
+
+    <string name="question_15">Which programming language(s) are used for Android application development</string>
+    <string name="option_15_a">Java</string>
+    <string name="option_15_b">NodeJS</string>
+    <string name="option_15_c">C++</string>
+    <string name="option_15_d">Kotlin</string>
+    <string name="answer_15">Java</string>
+
+    <string name="won">You earned : </string>
+</resources>
