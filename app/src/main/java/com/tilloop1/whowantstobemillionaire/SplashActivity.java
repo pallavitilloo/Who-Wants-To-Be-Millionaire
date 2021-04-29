@@ -13,9 +13,9 @@ import android.widget.TextView;
 /************************************************************************************
  *
  *  The Splash Screen activity shows the user a Splash screen with an image.
- *  After some time, the user is taken to the main activity screen
+ *  After some time, the user is taken to the Home activity screen
  * @author Pallavi Tilloo
- *
+ * @date 04-29-2021
  *************************************************************************************/
 
 public class SplashActivity extends AppCompatActivity {
@@ -38,16 +38,16 @@ public class SplashActivity extends AppCompatActivity {
         topAnimation.setFillAfter(true);
         splash_image.startAnimation(topAnimation);
 
-
         // postDelayed(Runnable, time) method is used to start the second activity with a delay
         handler=new Handler();
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent=new Intent(SplashActivity.this, MainActivity.class);
+                Intent intent=new Intent(SplashActivity.this, HomeActivity.class);
                 startActivity(intent);
                 finish();
             }
         },TIME_LIMIT);
     }
 }
+/**************************************  End of class *******************************************/

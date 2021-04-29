@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tilloop1.whowantstobemillionaire">
 
     <application
+
         android:allowBackup="true"
+        android:configChanges="orientation|screenSize|keyboardHidden"
         android:icon="@mipmap/wwtm_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/wwtm_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WhoWantsTobeMillionaire">
-        <activity android:name=".WinActivity"></activity>
+        <activity android:name=".LoseActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".WinActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

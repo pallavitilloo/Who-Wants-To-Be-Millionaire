@@ -2,121 +2,159 @@
     <!--    General string values for App-->
     <string name="app_name">Who wants to be a Millionaire?</string>
 
-    <!--    Game rules-->
-    <string name="game_rule_1">1. The game contains 5 questions based on concepts related to Android app development.</string>
-    <string name="game_rule_2">2. Every question has 10 points each.</string>
-    <string name="game_rule_3">3. You can answer each question only once.</string>
-    <string name="game_rule_4">4. Answers may be fill-in or multiple choice. Some questions may have multiple choices as answers.</string>
-    <string name="game_rule_5">5. Score will be displayed at the end of the game.</string>
-    <string name="game_rule_message">Here you go! Good Luck!</string>
-    <string name="game_rule_title">Card Game Rules</string>
-    <string name="start_button">START</string>
+    <!--    Messages for game quiz-->
+    <string name="toast_correct">"This is the CORRECT answer! You won $"</string>
+    <string name="toast_wrong">"This is the WRONG answer. You lose the game!"</string>
+    <string name="won">You won : </string>
+    <string name="quit_text">Quit the game</string>
+    <string name="no_option_selected">"Please select one option!</string>
+
+    <!--    Messages for Winning-->
+    <string name="congrats">Congratulations !!!</string>
+
+    <!--    Messages for Losing-->
+    <string name="sorry">Sorry! You lost the game.</string>
+    <string name="try_again">TRY AGAIN</string>
+
+    <!--    Messages on the Home Activity-->
+    <string name="home_text">All correct answers could win you a MILLION dollars! You can quit the game only at Levels 5 and 10. Good luck!</string>
+    <string name="help_text">GAME LEVELS</string>
 
     <!--    Questions, options and answers -->
-    <string name="question_1">What is an activity in Android?</string>
-    <string name="option_1_a">Activity performs the actions on the screen</string>
-    <string name="option_1_b">Manages the Application content</string>
-    <string name="option_1_c">Screen UI</string>
-    <string name="option_1_d">None of the above</string>
-    <string name="answer_1">Activity performs the actions on the screen</string>
+    <string name="question_1">How many continents are there?</string>
+    <string name="option_1_a">1</string>
+    <string name="option_1_b">3</string>
+    <string name="option_1_c">7</string>
+    <string name="option_1_d">20</string>
+    <string name="answer_1">7</string>
 
-    <string name="question_2">What are the layouts available in android?</string>
-    <string name="option_2_a">Linear Layout</string>
-    <string name="option_2_b">Frame Layout</string>
-    <string name="option_2_c">Table Layout</string>
-    <string name="option_2_d">Path Layout</string>
-    <string name="answer_2">Linear Layout</string>
+    <string name="question_2">Who was not a member of the Beatles?</string>
+    <string name="option_2_a">John Lennon</string>
+    <string name="option_2_b">Paul McCartney</string>
+    <string name="option_2_c">Ringo Star</string>
+    <string name="option_2_d">Justin Timberlake</string>
+    <string name="answer_2">Justin Timberlake</string>
 
-    <string name="question_3">What is fragment life cycle in android?</string>
-    <string name="option_3_a">onReceive() -> onAttach() -> onCreateView() -> onCreate()</string>
-    <string name="option_3_b">onCreate() -> onCreateView() -> onAttach() </string>
-    <string name="option_3_c">onAttach()-> onCreate() −> onCreateView() −> onActivityCreated() −> onStart() −> onResume()</string>
-    <string name="option_3_d">onStart() -> onCreateView() -> onCreate() -> onActivityCreated()</string>
-    <string name="answer_3">onAttach()-> onCreate() −> onCreateView() −> onActivityCreated() −> onStart() −> onResume()</string>
+    <string name="question_3">Which of the following is not a type of pasta?</string>
+    <string name="option_3_a">Spaghetti</string>
+    <string name="option_3_b">Escargot</string>
+    <string name="option_3_c">Fettuccine</string>
+    <string name="option_3_d">Ziti</string>
+    <string name="answer_3">Escargot</string>
 
-    <string name="question_4">In which directory are the XML Layout files stored in an Android application?</string>
-    <string name="option_4_a">assets</string>
-    <string name="option_4_b">src</string>
-    <string name="option_4_c">res/layout</string>
-    <string name="option_4_d">res/values</string>
-    <string name="answer_4">res/layout</string>
+    <string name="question_4">Which of these birds has the biggest brain relative to its size?</string>
+    <string name="option_4_a">Ostrich</string>
+    <string name="option_4_b">Hummingbird</string>
+    <string name="option_4_c">Sparrow</string>
+    <string name="option_4_d">Eagle</string>
+    <string name="answer_4">Hummingbird</string>
 
-    <string name="question_5">Which programming language(s) are used for Android application development</string>
-    <string name="option_5_a">Java</string>
-    <string name="option_5_b">NodeJS</string>
-    <string name="option_5_c">C++</string>
-    <string name="option_5_d">Kotlin</string>
-    <string name="answer_5">Java</string>
+    <string name="question_5">Oysters can change something most other animals cannot. What is it?</string>
+    <string name="option_5_a">Their size</string>
+    <string name="option_5_b">The thickness of their shell</string>
+    <string name="option_5_c">Their gender</string>
+    <string name="option_5_d">Their color</string>
+    <string name="answer_5">Their gender</string>
 
-    <string name="question_6">Which programming language(s) are used for Android application development</string>
-    <string name="option_6_a">Java</string>
-    <string name="option_6_b">NodeJS</string>
-    <string name="option_6_c">C++</string>
-    <string name="option_6_d">Kotlin</string>
-    <string name="answer_6">Java</string>
+    <string name="question_6">The Statue of Liberty was originally supposed to function as what?</string>
+    <string name="option_6_a">A port of entry</string>
+    <string name="option_6_b">A border marker</string>
+    <string name="option_6_c">A gift shop</string>
+    <string name="option_6_d">A lighthouse</string>
+    <string name="answer_6">A lighthouse</string>
 
-    <string name="question_7">Which programming language(s) are used for Android application development</string>
-    <string name="option_7_a">Java</string>
-    <string name="option_7_b">NodeJS</string>
-    <string name="option_7_c">C++</string>
-    <string name="option_7_d">Kotlin</string>
-    <string name="answer_7">Java</string>
+    <string name="question_7">Which of these lazy animals sleeps up to 22 hours a day?</string>
+    <string name="option_7_a">Koala</string>
+    <string name="option_7_b">Lion</string>
+    <string name="option_7_c">Copperhead</string>
+    <string name="option_7_d">Beagle</string>
+    <string name="answer_7">Koala</string>
 
-    <string name="question_8">Which programming language(s) are used for Android application development</string>
-    <string name="option_8_a">Java</string>
-    <string name="option_8_b">NodeJS</string>
-    <string name="option_8_c">C++</string>
-    <string name="option_8_d">Kotlin</string>
-    <string name="answer_8">Java</string>
+    <string name="question_8">How many years are there in an eon?</string>
+    <string name="option_8_a">35 years</string>
+    <string name="option_8_b">1 billion years</string>
+    <string name="option_8_c">1000 years</string>
+    <string name="option_8_d">25000 years</string>
+    <string name="answer_8">1 billion years</string>
 
-    <string name="question_9">Which programming language(s) are used for Android application development</string>
-    <string name="option_9_a">Java</string>
-    <string name="option_9_b">NodeJS</string>
-    <string name="option_9_c">C++</string>
-    <string name="option_9_d">Kotlin</string>
-    <string name="answer_9">Java</string>
+    <string name="question_9">Out of these European countries, which has the smallest population density?</string>
+    <string name="option_9_a">Bulgaria</string>
+    <string name="option_9_b">Norway</string>
+    <string name="option_9_c">Iceland</string>
+    <string name="option_9_d">France</string>
+    <string name="answer_9">Iceland</string>
 
-    <string name="question_10">Which programming language(s) are used for Android application development</string>
-    <string name="option_10_a">Java</string>
-    <string name="option_10_b">NodeJS</string>
-    <string name="option_10_c">C++</string>
-    <string name="option_10_d">Kotlin</string>
-    <string name="answer_10">Java</string>
+    <string name="question_10">Do you know which U.S. newspaper is nicknamed "The Gray Lady"?</string>
+    <string name="option_10_a">The New York Times</string>
+    <string name="option_10_b">The Daily Mail</string>
+    <string name="option_10_c">The Washington Post</string>
+    <string name="option_10_d">USA Today</string>
+    <string name="answer_10">The New York Times</string>
 
-    <string name="question_11">Which programming language(s) are used for Android application development</string>
-    <string name="option_11_a">Java</string>
-    <string name="option_11_b">NodeJS</string>
-    <string name="option_11_c">C++</string>
-    <string name="option_11_d">Kotlin</string>
-    <string name="answer_11">Java</string>
+    <string name="question_11">According to Albert Einstein, what is the "hardest thing in the world to understand"?</string>
+    <string name="option_11_a">Astronomy</string>
+    <string name="option_11_b">Income Taxes</string>
+    <string name="option_11_c">Physics</string>
+    <string name="option_11_d">Sewing</string>
+    <string name="answer_11">Income Taxes</string>
 
-    <string name="question_12">Which programming language(s) are used for Android application development</string>
-    <string name="option_12_a">Java</string>
-    <string name="option_12_b">NodeJS</string>
-    <string name="option_12_c">C++</string>
-    <string name="option_12_d">Kotlin</string>
-    <string name="answer_12">Java</string>
+    <string name="question_12">When you cut into an onion, which element causes it to smell?</string>
+    <string name="option_12_a">Plutonium</string>
+    <string name="option_12_b">Potassium</string>
+    <string name="option_12_c">Sulphur</string>
+    <string name="option_12_d">Hydrogen</string>
+    <string name="answer_12">Sulphur</string>
 
-    <string name="question_13">Which programming language(s) are used for Android application development</string>
-    <string name="option_13_a">Java</string>
-    <string name="option_13_b">NodeJS</string>
-    <string name="option_13_c">C++</string>
-    <string name="option_13_d">Kotlin</string>
-    <string name="answer_13">Java</string>
+    <string name="question_13">What sort of flower is used to make saffron?</string>
+    <string name="option_13_a">Lotus</string>
+    <string name="option_13_b">Crocus</string>
+    <string name="option_13_c">Dandelion</string>
+    <string name="option_13_d">Jasmine</string>
+    <string name="answer_13">Crocus</string>
 
-    <string name="question_14">Which programming language(s) are used for Android application development</string>
-    <string name="option_14_a">Java</string>
-    <string name="option_14_b">NodeJS</string>
-    <string name="option_14_c">C++</string>
-    <string name="option_14_d">Kotlin</string>
-    <string name="answer_14">Java</string>
+    <string name="question_14">Which of these U.S. Presidents appeared on the Television series "Laugh-In"?</string>
+    <string name="option_14_a">Lyndon Johnson</string>
+    <string name="option_14_b">Richard Nixon</string>
+    <string name="option_14_c">Jimmy Carter</string>
+    <string name="option_14_d">Gerald Ford</string>
+    <string name="answer_14">Richard Nixon</string>
 
-    <string name="question_15">Which programming language(s) are used for Android application development</string>
-    <string name="option_15_a">Java</string>
-    <string name="option_15_b">NodeJS</string>
-    <string name="option_15_c">C++</string>
-    <string name="option_15_d">Kotlin</string>
-    <string name="answer_15">Java</string>
+    <string name="question_15">The Earth is approximately how many miles away from the Sun?</string>
+    <string name="option_15_a">9.3 million</string>
+    <string name="option_15_b">39 million</string>
+    <string name="option_15_c">93 million</string>
+    <string name="option_15_d">193 million</string>
+    <string name="answer_15">93 million</string>
 
-    <string name="won">You earned : </string>
+    <!-- String values for Rules Activity -->
+    <string name="amt15">$1,000,000</string>
+    <string name="amt14">$500,000</string>
+    <string name="amt13">$250,000</string>
+    <string name="amt12">$150,000</string>
+    <string name="amt11">$75,000</string>
+    <string name="amt10">$50,000</string>
+    <string name="amt9">$25,000</string>
+    <string name="amt8">$15,000</string>
+    <string name="amt7">$10,000</string>
+    <string name="amt6">$7,500</string>
+    <string name="amt5">$5,000</string>
+    <string name="amt4">$3,000</string>
+    <string name="amt3">$2,000</string>
+    <string name="amt2">$1,000</string>
+    <string name="amt1">$500</string>
+    <string name="no15">15</string>
+    <string name="no14">14</string>
+    <string name="no13">13</string>
+    <string name="no12">12</string>
+    <string name="no11">11</string>
+    <string name="no10">10</string>
+    <string name="no9">9</string>
+    <string name="no8">8</string>
+    <string name="no7">7</string>
+    <string name="no6">6</string>
+    <string name="no5">5</string>
+    <string name="no4">4</string>
+    <string name="no3">3</string>
+    <string name="no2">2</string>
+    <string name="no1">1</string>
 </resources>

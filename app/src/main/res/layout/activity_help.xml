@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Scroll View enables the elements to be rendered properly when screen is tilted into landscape orientation-->
+
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bgDarkBlue">
+
+    <!--        Constraint layout inside scrollview - elements are placed with constraints-->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context=".HelpActivity"
+    android:background="@color/bgDarkBlue">
+
+<!--    The label to show Title Game Levels-->
+
+    <TextView android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textSize="22dp"
+        android:background="@drawable/button_orange"
+        android:layout_height="match_parent"
+        android:id="@+id/tvTitle"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:text="@string/help_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tlLevels"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+<!--    The layout that shows the levels of the questions and prize money associated with each level-->
+    <TableLayout
+        android:background="@mipmap/wwtm_launcher_foreground"
+        android:backgroundTintMode="multiply"
+        android:backgroundTint="@color/purple_700"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/tlLevels">
+
+<!--        Row for each level : 15 levels in total-->
+
+        <TableRow>
+            <TextView android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+            <TextView android:layout_weight="1" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amt15"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no14"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+            <TextView android:layout_weight="1" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amt14"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no13"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+            <TextView android:layout_weight="1" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amt13"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no12"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+            <TextView android:layout_weight="1" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amt12"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no11"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+            <TextView android:layout_weight="1" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amt11"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no10"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+            <TextView android:layout_weight="1" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amt10"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no9"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+            <TextView android:layout_weight="1" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amt9"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no8"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+            <TextView android:layout_weight="1" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amt8"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no7"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+            <TextView android:layout_weight="1" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amt7"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no6"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+            <TextView android:layout_weight="1" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amt6"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no5"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+            <TextView android:layout_weight="1" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amt5"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no4"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+            <TextView android:layout_weight="1" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amt4"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no3"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+            <TextView android:layout_weight="1" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amt3"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no2"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+            <TextView android:layout_weight="1" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amt2"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no1"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+            <TextView android:layout_weight="1" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amt1"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+<!--End of layout-->

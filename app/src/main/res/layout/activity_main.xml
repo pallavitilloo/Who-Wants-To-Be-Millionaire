@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!--        Constraint layout inside scrollview - elements are placed with constraints-->
-<androidx.constraintlayout.widget.ConstraintLayout
+<!--Scroll View enables the elements to be rendered properly when screen is tilted into landscape orientation-->
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bgDarkBlue">
+
+<!--        Constraint layout inside scrollview - elements are placed with constraints-->
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
     tools:context=".MainActivity"
     android:background="@color/bgDarkBlue">
+
+<!--    Text to show the Amount won by the user at each stage-->
 
     <TextView
         android:layout_width="wrap_content"
@@ -20,24 +29,28 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:text="@string/won"
-        android:background="@drawable/score_bg"
+        android:background="@drawable/button_green"
         android:textSize="20sp"
         android:textColor="@color/white"
         android:gravity="center"/>
 
-        <!--    Question 1-->
+        <!--   Layout to render the Question and Options A, B, C and D -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAmt"
+        app:layout_constraintBottom_toTopOf="@id/btnQuit"
         android:orientation="vertical"
         android:id="@+id/quesLayout"
-        android:padding="10dp">
+        android:paddingTop="75dp"
+        android:paddingBottom="80dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
 
-        <!--        Question 1-->
+        <!-- TextView for displaying the Question -->
 
         <TextView
             android:layout_width="match_parent"
@@ -47,23 +60,31 @@
             android:textAlignment="center"
             android:gravity="center"
             android:textColor="@color/black"
-            android:background="@drawable/button_bg"
+            android:background="@drawable/button_orange"
             android:id="@+id/tvQuestion"/>
+
+<!--        Dummy Text view to create some space-->
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-        <!--        Options for Question -->
+
+        <!--  RadioGroup to contain all answer options for Question -->
+
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/rgOptions"
-            android:background="@drawable/submit_bg">
+            android:background="@drawable/button_light_orange">
+
+<!--            Table layout is used to display two options in one row and two in another-->
 
             <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="10dp">
+
+<!--                Row 1 : Contains Options A and B-->
                 <TableRow>
                     <RadioButton
                         android:layout_width="0dp"
@@ -81,6 +102,7 @@
                     </RadioButton>
                 </TableRow>
 
+<!--                Row 2 : Contains options C and D-->
                 <TableRow>
                     <RadioButton
                         android:layout_weight="1"
@@ -99,18 +121,43 @@
                 </TableRow>
             </TableLayout>
         </RadioGroup>
+
+<!--        Question and options end here-->
+
+<!--        TextView to submit the answer-->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Submit"
             android:textColor="@color/white"
-            android:background="@drawable/submit_bg"
+            android:background="@drawable/button_blue"
             android:textSize="25sp"
             android:layout_gravity="center"
             android:id="@+id/btnSubmit"
             android:onClick="Submit"/>
     </LinearLayout>
+
+<!--    'Quit Game' button shown at levels 5 and 10 if the user wants to quit in the middle-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/quesLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/quit_text"
+        android:textColor="@color/white"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:id="@+id/btnQuit"
+        android:onClick="QuitGame"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+<!--End of layout-->
